@@ -11,10 +11,12 @@
 
 
 .salute {
+    background-color: #F0FFFF;
     height: 100vh;
     display: flex;
     align-items: center;
     overflow: hidden;
+    padding: 20px;
 }
 
 .saluteTextContainer {
@@ -23,7 +25,7 @@
 
 .saluteText {
     color: #333;
-    font-size: 60vw;
+    font-size: 50vw;
     cursor: default;
 }
 
@@ -32,22 +34,21 @@
 }
 
 .saluteImg {
-    width: 100%;
+    width: 90%;
 }
 
 .nameContainer {
+    background-color: #D3D3D3;
     height: 100vh;
-    background-color: rebeccapurple;
     display: flex;
     align-items: center;
 }
 
 .name {
-    font-size: 20vw;
+    font-size: 15vw;
     color: #333;
     cursor: default;
     text-align: center;
-    line-height: 100hv;
 }
 
 .jobTitleContainer {
@@ -55,11 +56,11 @@
 }
 
 .dark {
-    background: url("./img/bg1.png");
+    background: #C0C0C0;
 }
 
 .purple {
-    background: rebeccapurple url("./img/bg2.png");
+    background: #808080;
 }
 
 .jobTitle {
@@ -72,7 +73,7 @@
 .projects {
     display: flex;
     flex-direction: column;
-    gap: 100px;
+    gap: 90px;
     padding: 0px 100px;
 }
 
@@ -108,6 +109,7 @@
     left: 18px;
     border-radius: 28px;
     overflow: scroll;
+    background-color: aqua;
 }
 
 .phoneScreen::-webkit-scrollbar {
@@ -132,6 +134,7 @@
     top: 18px;
     left: 68px;
     overflow: scroll;
+    background-color: aqua;
 }
 
 .laptopScreen::-webkit-scrollbar {
@@ -244,14 +247,45 @@
     background-color: #063f24;
 }
 
+.link_gh {
+    color: #195b2c;
+}
+
 .githubSm {
     display: none;
 }
 
 @media screen and (max-width: 1024px) {
+    .nameContainer, .jobTitleContainer {
+        height: 50vh;
+        justify-content: center;       
+    }
+
+    .name, .jobTitle, .projectsTitle {
+        transform: none !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .jobTitle {
+        line-height: 50vh;
+    }
+
+    .saluteText {
+        font-size: 55vw;
+    }
+
+    .saluteImg {
+        width: 100%;
+    }
+
     .projects {
-        padding: 0 30px;
+        padding: 0 20px;
         text-align: center;
+    }
+
+    .projectsTitle {
+        padding-top: 80px;
     }
 
     .project {
@@ -264,6 +298,17 @@
 
     .phone, .laptop {
         transform: none !important;
+    }
+
+    .laptopScreen {
+        width: 278px;
+        height: 174px;
+        top: 11px;
+        left: 158px;
+    }
+
+    .laptop_img {
+        width: 50vh;
     }
 
     .githubChart {
@@ -283,5 +328,10 @@
         color: #555;
         font-size: 30px;
         text-align: center;
+    }
+
+
+    .logo_gh {
+        width: 300px;
     }
 }
